@@ -142,12 +142,59 @@ export default function Home() {
       {/* CONTACT */}
       <section id="contact" className="py-24 px-6 text-center">
         <h2 className="text-4xl font-semibold mb-10">Contact Us</h2>
-        <form className="max-w-xl mx-auto space-y-6">
-          <input placeholder="Your Name" className="w-full p-4 rounded-xl bg-slate-800" />
-          <input type="email" placeholder="Your Email" className="w-full p-4 rounded-xl bg-slate-800" />
-          <textarea placeholder="Your Message" rows="5" className="w-full p-4 rounded-xl bg-slate-800"></textarea>
-          <button className="bg-white text-black px-8 py-4 rounded-2xl font-semibold">Send Message</button>
-        </form>
+        <form
+  onSubmit={async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      message: formData.get("message"),
+    };
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      alert("Message sent successfully!");
+      e.target.reset();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
+  }}
+  className="max-w-xl mx-auto space-y-6"
+>
+  <input
+    name="name"
+    required
+    placeholder="Your Name"
+    className="w-full p-4 rounded-xl bg-slate-800"
+  />
+
+  <input
+    name="email"
+    type="email"
+    required
+    placeholder="Your Email"
+    className="w-full p-4 rounded-xl bg-slate-800"
+  />
+
+  <textarea
+    name="message"
+    required
+    placeholder="Your Message"
+    rows="5"
+    className="w-full p-4 rounded-xl bg-slate-800"
+  ></textarea>
+
+  <button className="bg-white text-black px-8 py-4 rounded-2xl font-semibold">
+    Send Message
+  </button>
+</form>
       </section>
 
       <footer className="text-center py-10 text-slate-500 border-t border-slate-800">
