@@ -4,23 +4,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
 
-      {/* NAVBAR */}
-      <nav className="fixed w-full bg-black/80 backdrop-blur border-b border-gray-800 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="/" className="text-xl font-bold tracking-wide">
-            TrustMetrics
-          </a>
-
-          <div className="hidden md:flex gap-8 text-sm text-gray-300">
-            <a href="/services" className="hover:text-white">Services</a>
-            <a href="/case-studies" className="hover:text-white">Case Studies</a>
-            <a href="/about" className="hover:text-white">About</a>
-            <a href="/blog" className="hover:text-white">Blog</a>
-            <a href="/contact" className="hover:text-white">Contact</a>
-          </div>
-        </div>
-      </nav>
-
       {/* HERO */}
       <section className="pt-40 pb-32 px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-bold leading-tight max-w-4xl mx-auto">
@@ -157,12 +140,6 @@ export default function Home() {
           Start a Conversation
         </a>
       </section>
-
-      {/* FOOTER */}
-      <footer className="text-center py-10 text-gray-500 border-t border-gray-800">
-        © {new Date().getFullYear()} TrustMetrics. All Rights Reserved.
-      </footer>
-
-    </div>
+</div>
   );
 }
