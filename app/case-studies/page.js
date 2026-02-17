@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "Case Studies",
+  description:
+    "Structured AI search relevance optimization and multilingual media quality validation case studies.",
+};
+
+
 export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-32">
@@ -33,3 +40,4 @@ export default function CaseStudies() {
     </div>
   );
 }
+
