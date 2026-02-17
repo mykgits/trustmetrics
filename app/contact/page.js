@@ -1,4 +1,9 @@
 "use client";
+export const metadata = {
+  title: "Contact",
+  description:
+    "Contact TrustMetrics for AI evaluation consulting and multilingual quality benchmarking discussions.",
+};
 
 import { useState } from "react";
 
@@ -104,3 +109,4 @@ export default function Contact() {
     </div>
   );
 }
+
