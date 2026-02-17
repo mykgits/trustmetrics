@@ -1,9 +1,27 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "TrustMetrics | AI Evaluation Consulting",
+  metadataBase: new URL("https://trustmetricsai.vercel.app"),
+  title: {
+    default: "TrustMetrics | AI Evaluation & Multilingual Quality Consulting",
+    template: "%s | TrustMetrics",
+  },
   description:
-    "Precision AI evaluation and multilingual data quality consulting for global platforms.",
+    "Founder-led AI evaluation consulting specializing in search quality assessment, multilingual annotation, and media QA frameworks for global technology platforms.",
+  keywords: [
+    "AI evaluation consulting",
+    "Search quality evaluation",
+    "Multilingual AI annotation",
+    "AI quality assurance",
+    "E-E-A-T evaluation",
+    "RWS AI projects",
+  ],
+  openGraph: {
+    title: "TrustMetrics | AI Evaluation Consulting",
+    description:
+      "Precision AI evaluation and multilingual data quality consulting for global platforms.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
