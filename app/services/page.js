@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "AI Evaluation Services",
+  description:
+    "Search quality evaluation, multilingual AI annotation, media QA, and structured evaluation framework design services.",
+};
+
 export default function Services() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-32">
@@ -42,3 +48,4 @@ export default function Services() {
     </div>
   );
 }
+
