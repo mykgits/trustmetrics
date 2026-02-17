@@ -1,11 +1,9 @@
-"use client";
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
 
       {/* HERO */}
-      <section className="pt-40 pb-32 px-6 text-center">
+      <section className="pt-32 pb-32 px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-bold leading-tight max-w-4xl mx-auto">
           Precision AI Evaluation & Multilingual Data Quality Consulting
         </h1>
@@ -33,8 +31,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* POSITIONING STRIP */}
-      <section className="py-16 bg-gray-950 text-center px-6">
+      {/* POSITIONING */}
+      <section className="py-20 bg-gray-950 px-6 text-center">
         <div className="max-w-5xl mx-auto">
           <p className="text-gray-400 text-lg leading-relaxed">
             TrustMetrics is a premium specialist AI evaluation initiative led
@@ -45,7 +43,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CORE CAPABILITIES SUMMARY */}
+      {/* CORE CAPABILITIES */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-semibold mb-16">
@@ -140,6 +138,7 @@ export default function Home() {
           Start a Conversation
         </a>
       </section>
-</div>
+
+    </div>
   );
 }
