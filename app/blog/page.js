@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "AI Evaluation Insights",
+  description:
+    "Expert insights on AI search quality, multilingual data validation, and evaluation frameworks.",
+};
+
+
 export default function Blog() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-32">
@@ -11,3 +18,4 @@ export default function Blog() {
     </div>
   );
 }
+
