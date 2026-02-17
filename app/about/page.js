@@ -1,10 +1,3 @@
-export const metadata = {
-  title: "About TrustMetrics",
-  description:
-    "Founded by Krishna Kishore Pisipati, TrustMetrics delivers structured AI evaluation and multilingual quality benchmarking for global platforms.",
-};
-
-
 export default function About() {
   return (
     <div className="min-h-screen bg-black text-white px-6 py-32">
@@ -33,4 +26,5 @@ export default function About() {
     </div>
   );
 }
+
 
